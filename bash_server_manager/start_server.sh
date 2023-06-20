@@ -1,0 +1,1 @@
+LD_PRELOAD=/home/codserver/server2/codextended.so /home/codserver/server2/cod_lnxded +exec config.cfg +set net_ip 193.38.250.89 +set net_port 28963 +set fs_homepath /home/codserver/server2 +set fs_basepath /home/codserver/server2
