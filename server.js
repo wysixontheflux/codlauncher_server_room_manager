@@ -5,7 +5,8 @@ const app = express()
 const port = 3000
 
 app.get('/execute', (req, res) => {
-    exec('echo "Hello world"', (err, stdout, stderr) => {
+    let port = req.query.port;  // Récupère le port depuis les paramètres de la requête
+    exec(`bash start_server.sh ${port}`, (err, stdout, stderr) => {
         if (err) {
             console.log(err)
             return
